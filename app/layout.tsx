@@ -1,7 +1,10 @@
 import type { Metadata, Viewport } from "next";
 import { Noto_Serif_SC, Noto_Sans_SC } from "next/font/google";
 import Script from "next/script";
+import { PreviewInspector } from "@/components/eazo/preview-inspector";
 import "./globals.css";
+
+const INSPECTOR_ENABLED = process.env.NEXT_PUBLIC_EAZO_INSPECTOR === "1";
 
 const serif = Noto_Serif_SC({
   weight: ["300", "400", "600", "700", "900"],
@@ -42,6 +45,7 @@ export default function RootLayout({
           strategy="afterInteractive"
           data-eazo-app-id={APP_ID}
         />
+        {INSPECTOR_ENABLED && <PreviewInspector />}
       </body>
     </html>
   );
