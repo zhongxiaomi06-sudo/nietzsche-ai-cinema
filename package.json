@@ -1,0 +1,10 @@
+{
+  "name": "nietzsche-ai-cinema",
+  "version": "1.0.0",
+  "private": true,
+  "description": "尼采数字分身 · 静态站点 + AI 代理 + 反馈存储（Eazo 预览适配层，运行原 server.py）",
+  "scripts": {
+    "dev": "PORT=${PORT:-3000} HOST=0.0.0.0 python3 server.py",
+    "start": "PORT=${PORT:-3000} HOST=0.0.0.0 python3 server.py"
+  }
+}
