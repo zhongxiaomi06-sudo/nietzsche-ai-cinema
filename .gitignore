@@ -1,5 +1,13 @@
-.DS_Store
+node_modules/
+.next/
+dist/
+build/
+.vercel/
+.env
+.env.local
+.cache/
+.turbo/
 __pycache__/
 *.pyc
-*.pem
-.aws/
+coverage/
+.DS_Store
