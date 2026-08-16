@@ -335,13 +335,6 @@ export default function CinemaExperience() {
         })}
       </div>
 
-      {/* dots nav */}
-      <div className="dots">
-        {world.chronology.map((_, i) => (
-          <button key={i} className={`${cur === i ? "on" : ""} ${god[i] ? "forked" : ""}`} onClick={() => scrollTo(i)} title={`第 ${i + 1} 章`} />
-        ))}
-      </div>
-
       {/* FABs */}
       <div className="fabs">
         <button className="fab" title={t("fab.panel")} onClick={() => setPanelOpen((v) => !v)}>
